@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Universal Box-Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Root and Body Styling */
+html,
+body,
+#root,
+.app {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  @apply text-sm;
+  @apply bg-gray-100 dark:bg-gray-900; /* Light and dark mode backgrounds */
+  @apply text-gray-900 dark:text-gray-200; /* Text colors for themes */
+  @apply antialiased; /* Better font rendering */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Scrollbar Styling */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-bg, #d4d4d4) var(--scrollbar-thumb, #a3a3a3);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb, #a3a3a3);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-bg, #d4d4d4);
+}
+
+/* Grid Rows with Better Responsiveness */
+@media (min-width: 768px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    ); /* Dynamic heights */
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    ); /* Larger screens */
+  }
+}
+
+/* Chart Containers */
+.chart-container {
+  width: 100%;
+  height: auto;
+  min-height: 300px; /* Flexible minimum height */
+  padding: 1rem; /* Prevent content from touching edges */
+}
+
+/* Responsive Flexbox Containers */
+.flex-container {
+  @apply flex flex-wrap gap-4;
+}
+
+/* Pie Chart Overflow Fix */
+.pie-chart-wrapper {
+  @apply relative flex justify-center items-center w-full h-full;
+  padding: 10px; /* Add padding to prevent clipping */
+}
+
+/* Theme Utilities */
+.light {
+  @apply bg-gray-100 text-gray-900;
+}
+
+.dark {
+  @apply bg-gray-900 text-gray-200;
+}
+
+/* Button Styling for Consistency */
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md;
+}
+
+.btn-secondary {
+  @apply bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-md;
+}
+
+/* Form Inputs */
+input,
+select,
+textarea {
+  @apply border border-gray-300 dark:border-gray-700 rounded-md px-3 py-2;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+input::placeholder {
+  @apply text-gray-400 dark:text-gray-600;
+}
