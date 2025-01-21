@@ -1,6 +1,6 @@
 
 SmartStock
-  SmartStock is a comprehensive Inventory Management Dashboard designed to streamline the management of inventory, sales, purchases,       and expenses. It offers real-time insights and user-friendly visualizations to enhance operational efficiency.
+SmartStock is a comprehensive Inventory Management Dashboard designed to streamline the management of inventory, sales, purchases,       and expenses. It offers real-time insights and user-friendly visualizations to enhance operational efficiency.
 
 Note: The main project files, including the client and server, are located in the master branch.
 
