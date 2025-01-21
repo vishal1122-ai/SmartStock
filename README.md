@@ -13,15 +13,15 @@ Features
   - Dark Mode Support: Toggle between light and dark themes for enhanced usability.
 
 Tech Stack
-  -Frontend
+Frontend
     Next.js: Framework for server-side rendering and optimized performance.
     Redux Toolkit: State management solution for predictable state handling.
     Tailwind CSS: Utility-first CSS framework for rapid UI development.
-  -Backend
+Backend
     Node.js: JavaScript runtime for building scalable server-side applications.
     PostgreSQL: Relational database system for robust data storage.
     Prisma ORM: Type-safe database client for seamless database interactions.
-  -Deployment
+    Deployment
     AWS Amplify: Hosting platform for the frontend application.
     AWS EC2: Virtual server hosting for the backend services.
     AWS RDS: Managed relational database service for PostgreSQL.
