@@ -14,14 +14,14 @@ Features
 
 Tech Stack
 Frontend
-    Next.js: Framework for server-side rendering and optimized performance.
-    Redux Toolkit: State management solution for predictable state handling.
-    Tailwind CSS: Utility-first CSS framework for rapid UI development.
+    1. Next.js: Framework for server-side rendering and optimized performance.
+    2. Redux Toolkit: State management solution for predictable state handling.
+    3. Tailwind CSS: Utility-first CSS framework for rapid UI development.
 Backend
     Node.js: JavaScript runtime for building scalable server-side applications.
     PostgreSQL: Relational database system for robust data storage.
     Prisma ORM: Type-safe database client for seamless database interactions.
-    Deployment
+Deployment
     AWS Amplify: Hosting platform for the frontend application.
     AWS EC2: Virtual server hosting for the backend services.
     AWS RDS: Managed relational database service for PostgreSQL.
